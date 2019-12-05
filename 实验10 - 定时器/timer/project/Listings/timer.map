@@ -1,0 +1,140 @@
+Component: ARM Compiler 5.06 update 4 (build 422) Tool: armlink [4d35d2]
+
+==============================================================================
+
+Section Cross References
+
+    main.o(i.main) refers to main.o(i.nrf_gpio_cfg_output) for nrf_gpio_cfg_output
+    main.o(i.main) refers to nrf_drv_timer.o(i.nrf_drv_timer_init) for nrf_drv_timer_init
+    main.o(i.main) refers to app_error.o(i.app_error_handler_bare) for app_error_handler_bare
+    main.o(i.main) refers to nrf_drv_timer.o(i.nrf_drv_timer_extended_compare) for nrf_drv_timer_extended_compare
+    main.o(i.main) refers to nrf_drv_timer.o(i.nrf_drv_timer_enable) for nrf_drv_timer_enable
+    main.o(i.main) refers to main.o(i.timer_led_event_handler) for timer_led_event_handler
+    main.o(i.main) refers to main.o(.constdata) for .constdata
+    main.o(i.timer_led_event_handler) refers to main.o(.data) for .data
+    main.o(i.timer_led_event_handler) refers to main.o(.constdata) for .constdata
+    nrf_drv_timer.o(i.TIMER0_IRQHandler) refers to nrf_drv_timer.o(.bss) for .bss
+    nrf_drv_timer.o(i.nrf_drv_timer_disable) refers to nrf_drv_timer.o(.bss) for .bss
+    nrf_drv_timer.o(i.nrf_drv_timer_enable) refers to nrf_drv_timer.o(.bss) for .bss
+    nrf_drv_timer.o(i.nrf_drv_timer_extended_compare) refers to nrf_drv_timer.o(i.nrf_drv_timer_compare) for nrf_drv_timer_compare
+    nrf_drv_timer.o(i.nrf_drv_timer_init) refers to nrf_drv_common.o(i.nrf_drv_common_irq_enable) for nrf_drv_common_irq_enable
+    nrf_drv_timer.o(i.nrf_drv_timer_init) refers to nrf_drv_timer.o(.bss) for .bss
+    nrf_drv_timer.o(i.nrf_drv_timer_init) refers to nrf_drv_timer.o(.constdata) for .constdata
+    nrf_drv_timer.o(i.nrf_drv_timer_uninit) refers to nrf_drv_timer.o(i.nrf_drv_timer_disable) for nrf_drv_timer_disable
+    nrf_drv_timer.o(i.nrf_drv_timer_uninit) refers to nrf_drv_timer.o(.bss) for .bss
+    app_error.o(i.app_error_handler) refers to app_error_weak.o(i.app_error_fault_handler) for app_error_fault_handler
+    app_error.o(i.app_error_handler_bare) refers to app_error_weak.o(i.app_error_fault_handler) for app_error_fault_handler
+    app_error.o(i.app_error_save_and_stop) refers to app_error.o(.bss) for .bss
+    arm_startup_nrf51.o(RESET) refers to arm_startup_nrf51.o(STACK) for __initial_sp
+    arm_startup_nrf51.o(RESET) refers to arm_startup_nrf51.o(.text) for Reset_Handler
+    arm_startup_nrf51.o(RESET) refers to nrf_drv_timer.o(i.TIMER0_IRQHandler) for TIMER0_IRQHandler
+    arm_startup_nrf51.o(.text) refers to system_nrf51.o(i.SystemInit) for SystemInit
+    arm_startup_nrf51.o(.text) refers to entry.o(.ARM.Collect$$$$00000000) for __main
+    system_nrf51.o(i.SystemCoreClockUpdate) refers to system_nrf51.o(.data) for .data
+    system_nrf51.o(i.SystemInit) refers to system_nrf51.o(i.is_manual_peripheral_setup_needed) for is_manual_peripheral_setup_needed
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry10a.o(.ARM.Collect$$$$0000000D) for __rt_final_cpp
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry11a.o(.ARM.Collect$$$$0000000F) for __rt_final_exit
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry7b.o(.ARM.Collect$$$$00000008) for _main_clock
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry8b.o(.ARM.Collect$$$$0000000A) for _main_cpp_init
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry9a.o(.ARM.Collect$$$$0000000B) for _main_init
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry5.o(.ARM.Collect$$$$00000004) for _main_scatterload
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry2.o(.ARM.Collect$$$$00000001) for _main_stk
+    entry2.o(.ARM.Collect$$$$00000001) refers to entry2.o(.ARM.Collect$$$$00002712) for __lit__00000000
+    entry2.o(.ARM.Collect$$$$00002712) refers to arm_startup_nrf51.o(STACK) for __initial_sp
+    entry2.o(__vectab_stack_and_reset_area) refers to arm_startup_nrf51.o(STACK) for __initial_sp
+    entry2.o(__vectab_stack_and_reset_area) refers to entry.o(.ARM.Collect$$$$00000000) for __main
+    entry5.o(.ARM.Collect$$$$00000004) refers to init.o(.text) for __scatterload
+    entry9a.o(.ARM.Collect$$$$0000000B) refers to main.o(i.main) for main
+    entry9b.o(.ARM.Collect$$$$0000000C) refers to main.o(i.main) for main
+    init.o(.text) refers to entry5.o(.ARM.Collect$$$$00000004) for __main_after_scatterload
+
+
+==============================================================================
+
+Removing Unused input sections from the image.
+
+    Removing main.o(.rev16_text), (4 bytes).
+    Removing main.o(.revsh_text), (4 bytes).
+    Removing nrf_drv_common.o(.rev16_text), (4 bytes).
+    Removing nrf_drv_common.o(.revsh_text), (4 bytes).
+    Removing nrf_drv_timer.o(.rev16_text), (4 bytes).
+    Removing nrf_drv_timer.o(.revsh_text), (4 bytes).
+    Removing nrf_drv_timer.o(i.nrf_drv_timer_capture), (28 bytes).
+    Removing nrf_drv_timer.o(i.nrf_drv_timer_clear), (8 bytes).
+    Removing nrf_drv_timer.o(i.nrf_drv_timer_compare_int_disable), (18 bytes).
+    Removing nrf_drv_timer.o(i.nrf_drv_timer_compare_int_enable), (34 bytes).
+    Removing nrf_drv_timer.o(i.nrf_drv_timer_disable), (24 bytes).
+    Removing nrf_drv_timer.o(i.nrf_drv_timer_increment), (8 bytes).
+    Removing nrf_drv_timer.o(i.nrf_drv_timer_pause), (8 bytes).
+    Removing nrf_drv_timer.o(i.nrf_drv_timer_resume), (8 bytes).
+    Removing nrf_drv_timer.o(i.nrf_drv_timer_uninit), (92 bytes).
+    Removing app_error.o(.rev16_text), (4 bytes).
+    Removing app_error.o(.revsh_text), (4 bytes).
+    Removing app_error.o(i.app_error_handler), (28 bytes).
+    Removing app_error.o(i.app_error_save_and_stop), (100 bytes).
+    Removing app_error.o(.bss), (32 bytes).
+    Removing app_error_weak.o(.rev16_text), (4 bytes).
+    Removing app_error_weak.o(.revsh_text), (4 bytes).
+    Removing nrf_assert.o(.rev16_text), (4 bytes).
+    Removing nrf_assert.o(.revsh_text), (4 bytes).
+    Removing arm_startup_nrf51.o(HEAP), (2048 bytes).
+    Removing system_nrf51.o(.rev16_text), (4 bytes).
+    Removing system_nrf51.o(.revsh_text), (4 bytes).
+    Removing system_nrf51.o(i.SystemCoreClockUpdate), (16 bytes).
+
+28 unused section(s) (total 2508 bytes) removed from the image.
+
+==============================================================================
+
+Memory Map of the image
+
+  Image Entry point : 0x00000000
+
+  Load Region LR_IROM1 (Base: 0x00000000, Size: 0x00000514, Max: 0x00040000, ABSOLUTE)
+
+    Execution Region ER_IROM1 (Base: 0x00000000, Size: 0x0000050c, Max: 0x00040000, ABSOLUTE)
+
+    Base Addr    Size         Type   Attr      Idx    E Section Name        Object
+
+    0x00000000   0x000000c0   Data   RO          352    RESET               arm_startup_nrf51.o
+    0x000000c0   0x00000000   Code   RO          394  * .ARM.Collect$$$$00000000  mc_p.l(entry.o)
+    0x000000c0   0x00000004   Code   RO          397    .ARM.Collect$$$$00000001  mc_p.l(entry2.o)
+    0x000000c4   0x00000004   Code   RO          400    .ARM.Collect$$$$00000004  mc_p.l(entry5.o)
+    0x000000c8   0x00000000   Code   RO          402    .ARM.Collect$$$$00000008  mc_p.l(entry7b.o)
+    0x000000c8   0x00000000   Code   RO          404    .ARM.Collect$$$$0000000A  mc_p.l(entry8b.o)
+    0x000000c8   0x00000008   Code   RO          405    .ARM.Collect$$$$0000000B  mc_p.l(entry9a.o)
+    0x000000d0   0x00000000   Code   RO          407    .ARM.Collect$$$$0000000D  mc_p.l(entry10a.o)
+    0x000000d0   0x00000000   Code   RO          409    .ARM.Collect$$$$0000000F  mc_p.l(entry11a.o)
+    0x000000d0   0x00000004   Code   RO          398    .ARM.Collect$$$$00002712  mc_p.l(entry2.o)
+    0x000000d4   0x00000038   Code   RO          353    .text               arm_startup_nrf51.o
+    0x0000010c   0x00000024   Code   RO          411    .text               mc_p.l(init.o)
+    0x00000130   0x000000a0   Code   RO          360    i.SystemInit        system_nrf51.o
+    0x000001d0   0x00000044   Code   RO          163    i.TIMER0_IRQHandler  nrf_drv_timer.o
+    0x00000214   0x0000001c   Code   RO          315    i.app_error_fault_handler  app_error_weak.o
+    0x00000230   0x00000018   Code   RO          276    i.app_error_handler_bare  app_error.o
+    0x00000248   0x00000048   Code   RO          361    i.is_manual_peripheral_setup_needed  system_nrf51.o
+    0x00000290   0x00000084   Code   RO            3    i.main              main.o
+    0x00000314   0x00000068   Code   RO          134    i.nrf_drv_common_irq_enable  nrf_drv_common.o
+    0x0000037c   0x0000002a   Code   RO          166    i.nrf_drv_timer_compare  nrf_drv_timer.o
+    0x000003a6   0x00000002   PAD
+    0x000003a8   0x0000001c   Code   RO          170    i.nrf_drv_timer_enable  nrf_drv_timer.o
+    0x000003c4   0x0000002e   Code   RO          171    i.nrf_drv_timer_extended_compare  nrf_drv_timer.o
+    0x000003f2   0x00000002   PAD
+    0x000003f4   0x000000ac   Code   RO          173    i.nrf_drv_timer_init  nrf_drv_timer.o
+    0x000004a0   0x00000010   Code   RO            4    i.nrf_gpio_cfg_output  main.o
+    0x000004b0   0x00000048   Code   RO            5    i.timer_led_event_handler  main.o
+    0x000004f8   0x0000000c   Data   RO            6    .constdata          main.o
+    0x00000504   0x00000008   Data   RO          178    .constdata          nrf_drv_timer.o
+    0x0000050c   0x00000000   Data   RO          413    Region$$Table       anon$$obj.o
+
+
+    Execution Region RW_IRAM1 (Base: 0x20000000, Size: 0x00000818, Max: 0x00008000, ABSOLUTE)
+
+    Base Addr    Size         Type   Attr      Idx    E Section Name        Object
+
+    0x20000000   0x00000004   Data   RW            7    .data               main.o
+    0x20000004   0x00000004   Data   RW          362    .data               system_nrf51.o
+    0x20000008   0x0000000c   Zero   RW          177    .bss                nrf_drv_timer.o
+    0x20000014   0x00000004   PAD
+    0x20000018   0x00000800   Zero   RW          350    STACK               arm_startup_nrf51.o
+
